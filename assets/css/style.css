@@ -9,6 +9,7 @@
     --cor-prim: rgb(37, 37, 37);
     --cor-sec: rgb(170, 0, 255);
     --letras: rgb(255, 255, 255);
+    --cor-footer: rgb(53, 53, 53);
 }
 
 .logo {
@@ -21,6 +22,9 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--cor-prim);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 header .logo {
@@ -37,7 +41,7 @@ nav {
 nav button {
     border: none;
     height: 18vh;
-    width: calc(55vw/4);
+    width: calc(54vw/4);
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -52,14 +56,49 @@ nav button:hover {
     color: var(--cor-prim);
 }
 
+.banner {
+    width: 100%;
+}
+
+main {
+    background-color: var(--cor-prim);
+}
+
+h1 {
+    color: var(--cor-sec);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 10px 0;
+}
+
+.section1 {
+    text-align: center;
+    padding: 8vh 0;
+}
+.section1 p {
+    color: white;
+    font-size: 16px;
+    padding: 10px 15vw;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: var(--letras);
+    font-size: 50px;
+}
+
+
+
 footer {
     background-color: var(--cor-prim);
     text-align: center;
+    padding-top: 10px;
 }
 
 footer p {
     color: var(--letras);
-    background-color: rgb(73, 73, 73);
+    background-color: var(--cor-footer);
     padding: 8px;
 }
 .contato-logo {
