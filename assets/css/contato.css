@@ -136,6 +136,7 @@ input{
     box-shadow: 1px 1px 1px var(--cor-sec);
 }
 
+
 textarea{
     color: var(--letras);
     border-radius: 20px;

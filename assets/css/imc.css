@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-prim: rgb(37, 37, 37);
+    --cor-sec: rgb(170, 0, 255);
+    --letras: rgb(255, 255, 255);
+    --cor-footer: rgb(53, 53, 53);
+}
+
+.logo {
+    width: 130px;
+    justify-self: flex-start;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-prim);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+header .logo {
+    margin: 0 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+
+nav button {
+    border: none;
+    height: 18vh;
+    width: calc(54vw/4);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--cor-prim);
+    color: var(--cor-sec);
+    transition: 0.4s ease;
+}
+
+nav button:hover {
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+}
+
+.div-titulo {
+    text-align: center;
+}
+.div-titulo p {
+    margin: 8px 0;
+    letter-spacing: 1px;
+}
+.titulo {
+    font-size: 30px;
+    color: var(--cor-sec)
+}
+
+.section1 {
+    background-color: var(--letras);
+    padding: 50px 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: var(--cor-prim);
+    width: 58vw;
+    border-radius: 25px;
+}
+.div-form .titulo {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-form-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form img {
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    margin-left: 40px;
+}
+
+input {
+    border-radius: 20px;
+    width: 250px;
+    height: 15px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.botao-calcular {
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--cor-prim);
+    width: 270px;
+    padding: 7px 15px;
+    background-color: var(--cor-sec);
+    border: 3px solid var(--cor-sec);
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.botao-calcular:hover {
+    background-color: var(--cor-prim);
+    color: var(--cor-sec);
+}
+
+.text-imc{
+    color: var(--letras);
+    margin: 5px 0;
+    text-align: start;
+}
+
+
+footer {
+    background-color: var(--cor-prim);
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer p {
+    color: var(--letras);
+    padding-bottom: 15px;
+}
+.contato-logo {
+    width: 25px;
+    margin: 15px 10px;
+}
+
+
