@@ -50,6 +50,7 @@ nav button {
     background-color: var(--cor-prim);
     color: var(--cor-sec);
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 nav button:hover {

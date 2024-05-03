@@ -50,6 +50,7 @@ nav button {
     background-color: var(--cor-prim);
     color: var(--cor-sec);
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 nav button:hover {
@@ -77,37 +78,37 @@ main {
 }
 
 .img1 {
-    width: 100%;
+    width: 80%;
 }
 
 .botao {
-    background-color: #9213c4; 
-    border: none;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--cor-sec); 
+    border: 3px solid var(--cor-sec); 
+    color: black;
+    padding: 10px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
     letter-spacing: 2px;
     font-weight: bold;
-  }
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: black;
+    color: var(--cor-sec);
+}
 
 
-  .div2 {
+.div2 {
     padding: 10px;
     display: flex;
     justify-content: center;
     padding-top: 40px;
-  }
-  
-  .botao:hover {
-    background-color: #6a1b9a; 
-  }
-  
+}
 
   
 footer {
