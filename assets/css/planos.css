@@ -2,17 +2,72 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --cor-prim: black;
+    --cor-prim: rgb(37, 37, 37);
     --cor-sec: rgb(170, 0, 255);
+    --letras: rgb(255, 255, 255);
+    --cor-footer: rgb(53, 53, 53);
+}
+
+.logo {
+    width: 130px;
+    justify-self: flex-start;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-prim);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+header .logo {
+    margin: 0 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+
+nav button {
+    border: none;
+    height: 18vh;
+    width: calc(54vw/4);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--cor-prim);
+    color: var(--cor-sec);
+    transition: 0.4s ease;
+}
+
+nav button:hover {
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+}
+
+.banner {
+    width: 100%;
+}
+
+main {
+    background-color: black;
 }
 
 .linha {
-    border-top: 1px solid black;
-    width: 80%; /* Defina a largura desejada para a linha */
-    margin: 20px auto; /* Centralize a linha na página, alterando a margem conforme necessário */
+    border-top: 1px solid white;
+    width: 80%; 
+    margin: 20px auto; 
 }
 
 .div1 {
@@ -20,26 +75,52 @@
     justify-content: center;
 }
 
-.tabela-planos {
-    width: 80%;
-    display: flex ;
-    border-collapse: collapse;
-    justify-content: center;
-    align-content: center;
-  }
-.tabela-planos, .tabela-planos th, .tabela-planos td {
-    border: 1px solid #ddd;
-  }
-.tabela-planos th, .tabela-planos td {
-    padding: 8px;
+.img1 {
+    width: 100%;
+}
+
+.botao {
+    background-color: #9213c4; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    letter-spacing: 2px;
+    font-weight: bold;
   }
-.tabela-planos th {
-    background-color: #f2f2f2;
+
+
+  .div2 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
   }
-.checkmark {
-    color: green;
+  
+  .botao:hover {
+    background-color: #6a1b9a; 
   }
-.cross {
-    color: red;
-  }
+  
+
+  
+footer {
+    background-color: var(--cor-prim);
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer p {
+    color: var(--letras);
+    background-color: var(--cor-footer);
+    padding: 8px;
+}
+.contato-logo {
+    width: 25px;
+    margin: 15px 10px;
+}
