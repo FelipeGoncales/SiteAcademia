@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-prim: rgb(37, 37, 37);
+    --cor-sec: rgb(170, 0, 255);
+    --letras: rgb(255, 255, 255);
+}
+
+body {
+    color: var(--letras);
+    background-color: black;
+    margin: 0;
+}
+
+.logo {
+    width: 130px;
+    justify-self: flex-start;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-prim);
+}
+
+header .logo {
+    margin: 0 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+
+nav button {
+    border: none;
+    height: 18vh;
+    width: calc(55vw/4);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--cor-prim);
+    color: var(--cor-sec);
+    transition: 0.4s ease;
+}
+
+nav button:hover {
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+}
+
+footer {
+    background-color: var(--cor-prim);
+    text-align: center;
+}
+
+footer p {
+    color: var(--letras);
+    background-color: rgb(73, 73, 73);
+    padding: 8px;
+}
+.contato-logo {
+    width: 25px;
+    margin: 15px 10px;
+}
+
+.proteinas {
+    text-align: center;
+}
+
+.textos_proteinas {
+    
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.textos_proteinas div {
+    background: var(--letras);
+    color: black;
+    border-radius: 20px;
+    padding: 3px;
+    width: 250px;
+    height: 275;
+}
+
+.massa_muscular {
+    text-align: center;
+}
+
+.textos_massa {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.textos_massa div img {
+   
+    color: black;
+    padding: 2px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.textos_massa div {
+    background-color: var(--letras);
+    color: black;
+    border-radius: 20px;
+}
+
+.imagem_primeira {
+    width: 100%;
+}
