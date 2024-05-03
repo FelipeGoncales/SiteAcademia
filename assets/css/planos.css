@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --cor-prim: black;
+    --cor-sec: rgb(170, 0, 255);
+}
+
+.linha {
+    border-top: 1px solid black;
+    width: 80%; /* Defina a largura desejada para a linha */
+    margin: 20px auto; /* Centralize a linha na página, alterando a margem conforme necessário */
+}
