@@ -2,9 +2,47 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --cor-prim: black;
+    --cor-prim: rgb(24, 24, 24);
     --cor-sec: rgb(170, 0, 255);
+    --fundo: rgb(214, 214, 214);
+}
+
+.logo {
+    width: 150px;
+    height: 94px;
+    justify-self: flex-start;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--cor-prim);
+}
+
+header .logo {
+    justify-self: flex-start;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+nav button {
+    border: none;
+    padding: 67px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--cor-prim);
 }
