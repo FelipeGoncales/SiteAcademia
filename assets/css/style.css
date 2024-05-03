@@ -59,6 +59,7 @@ nav button:hover {
 
 .banner {
     width: 100%;
+    padding: -3;
 }
 
 main {
