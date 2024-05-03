@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --cor-prim: black;
+    --cor-sec: rgb(170, 0, 255);
+}
