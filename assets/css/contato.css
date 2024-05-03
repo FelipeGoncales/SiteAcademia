@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --preto: black;
+    --cor-prim: rgb(37, 37, 37);
+    --cor-sec: rgb(170, 0, 255);
+    --letras: rgb(255, 255, 255);
+}
+
+/* cabeçalho */
+.logo {
+    width: 130px;
+    justify-self: flex-start;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-prim);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+header .logo {
+    margin: 0 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+
+nav button {
+    border: none;
+    height: 18vh;
+    width: calc(54vw/4);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--cor-prim);
+    color: var(--cor-sec);
+    transition: 0.4s ease;
+}
+
+nav button:hover {
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+}
+
+.banner {
+    width: 100%;
+}
+ 
+/* end */
+
+/* inicio */
+
+.fundo{
+    background-color: var(--preto);
+    color: var(--letras);
+    width: 100%;
+}
+
+.fundo-text{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    padding: 200px;
+}
+/* end */
+
+/* contato */
+
+.titulo{
+    color: var(--cor-sec);
+    font-size: 30px;
+}
+
+a {
+    color: var(--letras);
+}
+
+.fundo-img{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px var(--cor-sec);
+    background-color: var(--cor-prim);
+    border-radius: 10px;
+    color: var(--letras);
+    padding: 40px;
+    width: 32%;
+    height: 100%;
+}
+
+.img{
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: ;
+}
+
+.fundo-ctt{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    gap: 14px;
+}
+
+.funddo-pag {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+input{
+    color: var(--letras);
+    border-radius: 20px;
+    background-color: var(--cor-prim);
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px var(--cor-sec);
+}
+
+
+textarea{
+    color: var(--letras);
+    border-radius: 20px;
+    background-color: var(--cor-prim);
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px var(--cor-sec);
+}
+
+.button-ctt{
+    
+    border-radius: 20px;
+    width: 400px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    box-shadow: 1px 1px 1px black;
+    background-color: var(--cor-sec);
+}
+/* end */
+
+/* roda pé */
+footer {
+    background-color: var(--cor-prim);
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer p {
+    color: var(--letras);
+    padding-bottom: 15px;
+}
+.contato-logo {
+    width: 25px;
+    margin: 15px 10px;
+}
+/* end */

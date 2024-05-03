@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,6 +59,7 @@ nav button:hover {
 
 .banner {
     width: 100%;
+    padding: -3;
 }
 
 main {
@@ -67,14 +69,19 @@ main {
 h1 {
     color: var(--cor-sec);
     text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: 15px;
+    letter-spacing: 5px;
     padding: 10px 0;
+    font-weight: lighter;
+}
+
+section {
+    text-align: center;
+    padding: 15vh 0;
 }
 
 .section1 {
-    text-align: center;
-    padding: 8vh 0;
+    background-color: var(--cor-footer);
 }
 .section1 p {
     color: white;
@@ -85,21 +92,109 @@ h1 {
 
 h4 {
     color: var(--letras);
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
+.sup-titulo {
+    color: var(--letras);
+    text-transform: uppercase;
+    margin: 0 15vw;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
 
+.section2 {
+    background-color: var(--cor-prim);
+}
+
+.section2 button {
+    border: 3px solid var(--cor-sec);
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5vh;
+    text-transform: uppercase;
+    border-radius: 25px;
+    letter-spacing: 5px;
+    padding: 8px 100px;
+    transition: 0.3s;
+}
+
+.section2 button:hover {
+    border: 3px solid var(--cor-sec);
+    background-color: var(--cor-prim);
+    color: var(--cor-sec);
+}
+
+.section3 {
+    background-color: var(--cor-footer);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-1 {
+    margin-left: 185px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.div-2 {
+    margin-right: 185px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.div-2 h2 {
+    color: var(--cor-sec);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.div-2 p {
+    color: var(--letras);
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 30px 0;
+}
+
+.div-2 button {
+    border: 3px solid var(--cor-sec);
+    border-radius: 25px;
+    background-color: var(--cor-sec);
+    font-size: 18px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    color: var(--cor-footer);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.div-2 button:hover {
+    background-color: var(--cor-footer);
+    color: var(--cor-sec);
+}
+
+.div-1 img {
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+}
 
 footer {
     background-color: var(--cor-prim);
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 footer p {
     color: var(--letras);
-    background-color: var(--cor-footer);
-    padding: 8px;
+    padding-bottom: 15px;
 }
 .contato-logo {
     width: 25px;
