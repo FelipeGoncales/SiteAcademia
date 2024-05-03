@@ -14,3 +14,32 @@
     width: 80%; /* Defina a largura desejada para a linha */
     margin: 20px auto; /* Centralize a linha na página, alterando a margem conforme necessário */
 }
+
+.div1 {
+    display: flex;
+    justify-content: center;
+}
+
+.tabela-planos {
+    width: 80%;
+    display: flex ;
+    border-collapse: collapse;
+    justify-content: center;
+    align-content: center;
+  }
+.tabela-planos, .tabela-planos th, .tabela-planos td {
+    border: 1px solid #ddd;
+  }
+.tabela-planos th, .tabela-planos td {
+    padding: 8px;
+    text-align: center;
+  }
+.tabela-planos th {
+    background-color: #f2f2f2;
+  }
+.checkmark {
+    color: green;
+  }
+.cross {
+    color: red;
+  }
