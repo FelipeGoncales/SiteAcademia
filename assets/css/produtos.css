@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --cor-prim: black;
+    --cor-sec: rgb(170, 0, 255);
+}
+
+body
+
+.proteinas {
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    height: 150px;
+}
+
+.texto_proteinas {
+    text-align: center;
+    justify-content: space-evenly;
+
+}
