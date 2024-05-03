@@ -32,12 +32,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
 nav button {
     border: none;
-    padding: 67px 0;
+    height: 15vh;
+    width: calc(45vw/4);
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
