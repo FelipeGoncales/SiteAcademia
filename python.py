@@ -1,8 +1,9 @@
-# Cálculo IMC
+from flask import Flask, render_template
 
-alt = float(input('Insira sua altura (m): '))
-massa = float(input('Insira seu peso (kg): '))
+app = Flask(__name__)
 
-imc = round(massa / (alt**2), 2)
+@app.route('/')
+def imc():
+    return render_template('imc.html')
 
-print(f'IMC: {imc}')
+app.run(debug=True)
