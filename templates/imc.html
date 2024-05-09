@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/imc.css">
-    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="../static/css/imc.css">
+    <link rel="icon" href="../static/img/logo.png">
     <title>Infinity Gym - Calculadora de IMC</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="assets/img/logo.png" alt="Logo Infinity Gym" class="logo"></a>
+        <a href="/"><img src="static/img/logo.png" alt="Logo Infinity Gym" class="logo"></a>
         <nav>  
-            <a href="index.html"><button>Início</button></a>
-            <a href="planos.html"><button>Planos</button></a>
-            <a href="produtos.html"><button>Produtos</button></a>
-            <a href="contatos.html"><button>Contato</button></a>
+            <a href="/"><button>Início</button></a>
+            <a href="/planos"><button>Planos</button></a>
+            <a href="/produtos"><button>Produtos</button></a>
+            <a href="/contatos"><button>Contato</button></a>
         </nav>
     </header>
     <main>
@@ -23,31 +23,28 @@
                 <h1 class="titulo">Calculadora de IMC</h1>
                 <p>O IMC é calculado dividindo-se o peso (em quilogramas) pela altura ao quadrado (em metros)</p>
             </div>
-            <form action="">
+            <form action="/resultado" method="POST">
                 <div class="div-form">
                     <h2 class="titulo">Preencha o campo abaixo</h2>
                     <div class="elemento">
-                        <input type="number" step="0.01" placeholder="Altura (m)*">   
+                        <input type="text" placeholder="Altura (m)*" name="altura">   
                     </div>
                     <div class="elemento">
-                        <input type="number" step="0.01" placeholder="Peso (kg)*">
+                        <input type="text" placeholder="Peso (kg)*" name="peso">
                     </div>
                     <button type="submit" class="botao-calcular">Calcular</button>
-                    <p class="text-imc">Seu IMC:</p>
-                    <p class="text-imc">Classificação:</p>
-                    <!-- PARTE  -->
-                    <!-- EM     -->
-                    <!-- PYTHON -->
+                    <p class="text-imc">Seu IMC: {{imc}}</p>
+                    <p class="text-imc">Classificação: {{classificacao}}</p>
                 </div>
-                <img src="assets/img/img-imc.png" alt="" class="imc-img">
+                <img src="../static/img/img-imc.png" alt="" class="imc-img">
             </form>
         </section>
     </main>
     <footer>
-        <img src="assets/img/logo.png" alt="Logo Infinity Gym" class="logo">
+        <img src="../static/img/logo.png" alt="Logo Infinity Gym" class="logo">
         <div class="div-contato">
-            <a href="" class="logos"><img src="assets/img/instagram-logo.png" alt="Logo Instagram" class="contato-logo"></a>
-            <a href="" class="logos"><img src="assets/img/WhatsApp-logo.png" alt="Logo WhatsApp" class="contato-logo"></a>
+            <a href="" class="logos"><img src="../static/img/instagram-logo.png" alt="Logo Instagram" class="contato-logo"></a>
+            <a href="" class="logos"><img src="../static/img/WhatsApp-logo.png" alt="Logo WhatsApp" class="contato-logo"></a>
         </div>
         <p>© 2024 Infinity Gym. Todos os direitos reservados.</p>
     </footer>
