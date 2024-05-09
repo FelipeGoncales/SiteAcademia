@@ -67,7 +67,7 @@ nav button:hover {
 /* inicio */
 
 .fundo{
-    background-color: var(--preto);
+    background-color: var(--cor-footer);
     color: var(--letras);
     width: 100%;
 }
@@ -78,6 +78,17 @@ nav button:hover {
     gap: 10px;
     flex-direction: column;
     padding: 200px;
+}
+
+.fundo .titulo {
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.fundo p {
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 /* end */
 
