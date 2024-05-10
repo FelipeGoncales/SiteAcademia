@@ -161,7 +161,6 @@ textarea{
 }
 
 .button-ctt{
-    
     border-radius: 20px;
     width: 400px;
     padding-top: 10px;
@@ -169,6 +168,7 @@ textarea{
     padding-bottom: 10px;
     padding-right: 15px;
     box-shadow: 1px 1px 1px black;
+    cursor: pointer;
     background-color: var(--cor-sec);
 }
 /* end */
